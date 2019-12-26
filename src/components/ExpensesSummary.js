@@ -14,10 +14,11 @@ export class ExpensesSummary extends React.Component {
 
     render() {
         const expCount = this.props.expenses ? this.props.expenses.length : 0;
+        const expWord = expCount === 1 ? 'expense' : 'expenses';
         const expTotal = numeral(getTotal(this.props.expenses) / 100).format('$0,0.00');
         return (
             <div>
-                <p>{`Viewing ${expCount} totalling ${expTotal}`}</p>
+                <h1>Viewing {expCount} {expWord} totalling {expTotal}</h1>
             </div>
         );
     }
