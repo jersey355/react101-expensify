@@ -74,3 +74,14 @@ test('Should not edit expense if ID not found', () => {
     const state = reducer(expenses, action);
     expect(state).toEqual(expenses);
 });
+
+test('Should set expenses', () => {
+
+    const action = {
+        type: 'SET_EXPENSES',
+        expenses: [expenses[1]]
+    };
+
+    const state = reducer(expenses, action);
+    expect(state).toEqual([expenses[1]]);
+});
