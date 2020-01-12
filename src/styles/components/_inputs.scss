@@ -14,3 +14,7 @@
     @extend .text-input;
     height: 10rem;
 }
+
+.text-area--stacked {
+    margin-top: $s-size;
+}

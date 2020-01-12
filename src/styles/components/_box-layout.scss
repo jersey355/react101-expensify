@@ -20,3 +20,9 @@
     line-height: 1;
     margin: 0 0 $m-size 0;
 }
+
+.box-layout__dual-column-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
